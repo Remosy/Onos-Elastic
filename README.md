@@ -124,3 +124,9 @@ Q: How to stop Logstash properly?
 :ghost: :tada: :ghost:
 tools' folders at:  ls /usr/local/Cellar
 
+# What to analysis via ONOS?
+
+## Centralised controller
+
+## Distributed controller
+
