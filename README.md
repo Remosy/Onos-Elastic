@@ -103,4 +103,3 @@ then run your configuration file
 ```bash
 /usr/local/bin/logstash -f logstash.conf
 ```
-
