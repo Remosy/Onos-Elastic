@@ -1,6 +1,8 @@
 # COMS4200
 A traffic monitoring tool which used ELK: [Sweet security](https://github.com/TravisFSmith/SweetSecurity)
 
+:point_right: Test dataset: was found on http://statweb.stanford.edu/~sabatti/data.html
+
 ## Pre Process :one:
 
 ### Install ONOS
@@ -58,9 +60,10 @@ buck run onos-local
 
 ## Connect Mininet with Logstash
 Q:How to sychnously send Mininet log to Logistach
+
 Q:Use TCP as input of Logistach?
 
-## Connect Logistach with ElasticSearch
+## Connect Logistach with ElasticSearch and display on Kibana
 Open elasticsearch and kibana separatly
 ```bash
 /usr/local/bin/elasticsearch
@@ -103,3 +106,4 @@ then run your configuration file
 ```bash
 /usr/local/bin/logstash -f logstash.conf
 ```
+:ghost: :tada: :ghost:
