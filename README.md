@@ -59,9 +59,24 @@ buck run onos-local
 * :purple_heart: disable firewall of your laptop
 
 ## Connect Mininet with Logstash
-Q:How to sychnously send Mininet log to Logistach
+Q:How to sychnously send Mininet log to Logistach 
 
-Q:Use TCP as input of Logistach?
+A: with some lagcy, because of middle process.
+
+On VM:
+
+* Use users' self-defined Python file to do:
+  * Test different settings(learning rules) of mininet (Via Switch condition) --> Like Tutorial 2
+  * Collect mininet output data(traffic flow info:Tutorial ?) and output under a same directory achnously
+
+On Mac:
+
+-- Locate a path of VirtualMachine from MacOSX:
+
+
+* Since the outputs of mininet will be always located at a same path(Don't need to change the path variable in logstash), then write the #SHELL file to run:
+  * Countdown user determined timelength,and excute line "/usr/local/bin/logstash -f logstash.conf" to update data.
+  * Refresh Kibana dashboard by exuting kyboard operation via calling another #SHELL file
 
 ## Connect Logistach with ElasticSearch and display on Kibana
 Open elasticsearch and kibana separatly
