@@ -104,6 +104,8 @@ then run your configuration file to send data to elasticsearch
 ```bash
 /usr/local/bin/logstash -f logstash.conf
 ```
+Q: How to stop Logstash properly?
+
 :ghost: :tada: :ghost:
 tools' folders at:  ls /usr/local/Cellar
 
