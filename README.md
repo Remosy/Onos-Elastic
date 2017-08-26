@@ -57,30 +57,50 @@ buck run onos-local
 * :purple_heart: disable firewall of your laptop
 
 ## Connect Mininet with Logstash
+Q:How to sychnously send Mininet log to Logistach
+Q:Use TCP as input of Logistach?
+
+## Connect Logistach with ElasticSearch
+Open elasticsearch and kibana separatly
+```bash
+/usr/local/bin/elasticsearch
+```
+```bash
+/usr/local/bin/kibana
+```
+open link from kibana terminal window: http://localhost:5601
 Assume get traffic data, and do [configuration](https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html) by createing a file named logstash.conf saved inside of logstash
 ```
 input {
   file {
     path => "/Users/.../Desktop/test.csv"
     type => "csv"
+    start_position =>"beginning"
   }
 }
+filter{
+    csv{
+        separator => ","
+        columns => ["date","l_ipn","r_asn","f"]
+    }
+    date {
+      match => ["date", "yyyy-MM-dd"]
+    }
+    mutate {convert => ["l_ipn","integer"]}
+    mutate {convert => ["r_asn","integer"]}
+    mutate {convert => ["f","integer"]}
+}
 output {
-  file {
-    path => "/Users/.../Desktop/test.csv"
-    type => "csv"
+  elasticsearch {
+     host => "localhost"
+     index => "Traffic"
+     document_type => "Monitoring traffic "
   }
+  stdout{}
 }
 ```
 then run your configuration file
 ```bash
 /usr/local/bin/logstash -f logstash.conf
 ```
-Q:How to sychnously send Mininet log to Logistach
-Q:Use TCP as input of Logistach?
-
-## Connect Logistach with ElasticSearch
-
-
-## Connect ElasticSearch with Kibana
 
