@@ -77,7 +77,6 @@ Assume get traffic data, and do [configuration](https://www.elastic.co/guide/en/
 input {
   file {
     path => "/Users/.../Desktop/test.csv"
-    type => "csv"
     start_position =>"beginning"
   }
 }
@@ -86,24 +85,25 @@ filter{
         separator => ","
         columns => ["date","l_ipn","r_asn","f"]
     }
-    date {
-      match => ["date", "yyyy-MM-dd"]
-    }
+
     mutate {convert => ["l_ipn","integer"]}
     mutate {convert => ["r_asn","integer"]}
     mutate {convert => ["f","integer"]}
 }
 output {
   elasticsearch {
-     host => "localhost"
+     hosts => "localhost"
      index => "Traffic"
      document_type => "Monitoring traffic "
   }
   stdout{}
 }
+
 ```
-then run your configuration file
+then run your configuration file to send data to elasticsearch
 ```bash
 /usr/local/bin/logstash -f logstash.conf
 ```
 :ghost: :tada: :ghost:
+tools' folders at:  ls /usr/local/Cellar
+
