@@ -1,5 +1,10 @@
 # COMS4200
+## Inspiration
 A traffic monitoring tool which used ELK: [Sweet security](https://github.com/TravisFSmith/SweetSecurity)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/7DFg9Ez2sJE/0.jpg)](https://www.youtube.com/watch?v=7DFg9Ez2sJE)
+
+
 
 :point_right: Test dataset: was found on http://statweb.stanford.edu/~sabatti/data.html
 
@@ -80,22 +85,24 @@ Commandline(another cmd window): ```bash onos localhost ```
 GUI: Open: http://localhost:8181/onos/ui/login.html The Default Username: onos; Password: rocks;
 Localhost:127.0.0.1
 
+## Mininet ICMP(Ping): http://mininet.org/walkthrough/
 
+## ONOS show traffic https://wiki.onosproject.org/display/ONOS/Basic+ONOS+Tutorial#BasicONOSTutorial-Showalltraffic
 
 ## Connect Mininet with Logstash
 Q:How to sychnously send Mininet log to Logistach 
 
-A: with some lagcy, because of middle process.
+A: with some latency, because of middle process.
 
 On VM:
 
-* Use users' self-defined Python file to do:
-  * Test different settings(learning rules) of mininet (Via Switch condition) --> Like Tutorial 2
-  * Collect mininet output data(traffic flow info:Tutorial ?) and output under a same directory achnously
+* Use self-defined Python([Pox](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet#openflow-controllers)) file to do:
+  * Test different settings(learning rules) of mininet (Via "Switch" 1...n cases)
+  * Collect mininet output data(Ask tutor:certain function of traffic flow) and output under a same directory asynchronously
 
 On Mac:
 
--- Locate a path of VirtualMachine from MacOSX: e.g: 
+-- Locate the mininet outputs path of VirtualMachine from MacOSX: e.g: 
 ```bash 
 ssh ubuntu@172.10.0.1 
 //and locate a path
@@ -151,9 +158,12 @@ Q: How to stop Logstash properly?
 :ghost: :tada: :ghost:
 tools' folders at:  ls /usr/local/Cellar
 
-# What to analysis via Mininet?
+# What to analysis via Mininet and ONOS?
 
-## Centralised controller
+## Inspiration
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Q3ptlUWoAE8/0.jpg)](https://www.youtube.com/watch?v=Q3ptlUWoAE8)
 
-## Distributed controller
+
+
+
 
