@@ -85,9 +85,9 @@ Commandline(another cmd window): ```bash onos localhost ```
 GUI: Open: http://localhost:8181/onos/ui/login.html The Default Username: onos; Password: rocks;
 Localhost:127.0.0.1
 
-## Mininet ICMP(Ping): http://mininet.org/walkthrough/
+#### Mininet ICMP(Ping): http://mininet.org/walkthrough/
 
-## ONOS show traffic https://wiki.onosproject.org/display/ONOS/Basic+ONOS+Tutorial#BasicONOSTutorial-Showalltraffic
+#### ONOS show traffic https://wiki.onosproject.org/display/ONOS/Basic+ONOS+Tutorial#BasicONOSTutorial-Showalltraffic
 
 ## Connect Mininet with Logstash
 Q:How to sychnously send Mininet log to Logistach 
