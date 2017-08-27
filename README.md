@@ -122,6 +122,8 @@ Open elasticsearch and kibana separatly
 ```
 open link from kibana terminal window: http://localhost:5601
 Assume get traffic data, and do [configuration](https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html) by createing a file named logstash.conf saved inside of logstash
+
+[![IMAGE ALT TEXT HERE](https://github.com/Remosy/COMS4200/blob/master/Screen%20Shot%202017-08-27%20at%207.21.58%20pm.png)
 ```
 input {
   file {
