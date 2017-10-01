@@ -37,16 +37,25 @@ Click: shift + ":" + "wq" to save and quit. And make sure you have installed "Bu
 brew install buck
 ```
 
+If use wget:
+Go to page: https://www.elastic.co/start
+![](https://github.com/Remosy/COMS4200/blob/master/Screen%20Shot%202017-10-02%20at%201.03.57%20am.png)
 ### Install Elastic
 ```bash
 brew install Elastic
 ```
-
+Ubuntu:
+```bash
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.2.tar.gz
+```
 ### Install Kibana
 ```bash
 brew install Kibana
 ```
-
+Ubuntu:
+```bash
+wget https://artifacts.elastic.co/downloads/kibana/kibana-5.6.2-linux-x86_64.tar.gz
+```
 ### Install Logstash
 ```bash
 brew install Logstash
