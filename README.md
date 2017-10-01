@@ -47,6 +47,8 @@ brew install Elastic
 Ubuntu:
 ```bash
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.2.tar.gz
+tar -xzf elasticsearch-5.6.2.tar.gz
+./elasticsearch-5.6.2/bin/elasticsearch
 ```
 ### Install Kibana
 ```bash
@@ -55,6 +57,7 @@ brew install Kibana
 Ubuntu:
 ```bash
 wget https://artifacts.elastic.co/downloads/kibana/kibana-5.6.2-linux-x86_64.tar.gz
+tar -xzf kibana-5.6.2-linux-x86_64.tar.gz
 ```
 ### Install Logstash
 ```bash
