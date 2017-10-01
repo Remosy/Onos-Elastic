@@ -39,7 +39,7 @@ brew install buck
 
 If use wget:
 Go to page: https://www.elastic.co/start
-![](https://github.com/Remosy/COMS4200/blob/master/Screen%20Shot%202017-10-02%20at%201.03.57%20am.png=100x20)
+![](https://github.com/Remosy/COMS4200/blob/master/Screen%20Shot%202017-10-02%20at%201.03.57%20am.png)
 ### Install Elastic
 ```bash
 brew install Elastic
