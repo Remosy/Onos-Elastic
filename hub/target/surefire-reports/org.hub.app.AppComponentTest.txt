@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.hub.app.AppComponentTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.095 s <<< FAILURE! - in org.hub.app.AppComponentTest
+basics(org.hub.app.AppComponentTest)  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.hub.app.AppComponentTest.setUp(AppComponentTest.java:32)
+
+basics(org.hub.app.AppComponentTest)  Time elapsed: 0.028 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.hub.app.AppComponentTest.tearDown(AppComponentTest.java:38)
+
