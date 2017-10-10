@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="remi-1.10.01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/oar/m2/org/remi/app/remi/1.10.0/remi-1.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
