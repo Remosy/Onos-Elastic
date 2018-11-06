@@ -1,4 +1,3 @@
-# COMS4200
 ## Inspiration
 A traffic monitoring tool which used ELK: [Sweet security](https://github.com/TravisFSmith/SweetSecurity)
 
